@@ -19,6 +19,6 @@ ReactDOM.render(
   //     <h1>MySecond Jsx</h1>
   //     <h1>MyThird Jsx</h1>
   //   </div>,
-  <Test />,
+  <App />,
   document.getElementById("root")
 );

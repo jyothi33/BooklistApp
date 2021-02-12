@@ -10,13 +10,18 @@ import ConditionalRenderComponent from "../src/Day6/ConditionalRenderComponent";
 import TemplateLiterals from "./Day7/TemplateLiterals";
 import AllStyleComponents from "./Day7/StyledComponents/AllStyleComponents";
 import CssModulesExample from "./Day7/CssModulesEx/CssModulesExample";
+import UncontrolledForms from "./Day8/ReactForms/UncontrolledForms";
+import ControlledForms from "./Day8/ReactForms/ControlledForms";
 
 const App = () => {
   return (
     <div>
-      <GlobalStyle />
+      <UncontrolledForms />
+      <hr />
+      <ControlledForms />
+      {/* <GlobalStyle /> */}
       {/* <TemplateLiterals /> */}
-      <AllStyleComponents />
+      {/* <AllStyleComponents /> */}
       {/* <CssModulesExample title={`Jyothi`} /> */}
       {/*<PizzaApp />*/}
       {/*booksArr.map((book,index) => <Booklist key={index} {...book}/>)*/}
