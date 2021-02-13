@@ -12,13 +12,23 @@ import AllStyleComponents from "./Day7/StyledComponents/AllStyleComponents";
 import CssModulesExample from "./Day7/CssModulesEx/CssModulesExample";
 import UncontrolledForms from "./Day8/ReactForms/UncontrolledForms";
 import ControlledForms from "./Day8/ReactForms/ControlledForms";
+import ParentComp from "./Day9/PureComponents/ParentComp";
+import PortalsDemo from "./Day9/Portals/PortalsDemo";
+import { BasicStringValidation } from "./Day8/ReactForms/FormValidation/BasicStringValidation";
+import PayPalApp from "./PayPalExperiments/PayPalApp";
+import FragmentDemo from "./Day9/Fragments/FragmentDemo";
 
 const App = () => {
   return (
     <div>
-      <UncontrolledForms />
+      {/* <FragmentDemo /> */}
+      {/* <PayPalApp /> */}
+      {/* <PortalsDemo /> */}
+      <ParentComp />
+      {/* <BasicStringValidation /> */}
+      {/* <UncontrolledForms />
       <hr />
-      <ControlledForms />
+      <ControlledForms /> */}
       {/* <GlobalStyle /> */}
       {/* <TemplateLiterals /> */}
       {/* <AllStyleComponents /> */}

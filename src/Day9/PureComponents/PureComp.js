@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 
 export class PureComp extends PureComponent {
   render() {
-    console.log("pure");
+    console.log("Pure Component !" + this.props.name);
     return <div>Pure Component {this.props.name}</div>;
   }
 }
