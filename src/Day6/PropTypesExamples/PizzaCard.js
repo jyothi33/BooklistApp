@@ -44,6 +44,8 @@ function PizzaCard({
       <Card.Img variant="top" src={img} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
+        <Card.Text></Card.Text>
+        {children}
         <Card.Text>{description}</Card.Text>
         <Card.Text>Rs.{price}</Card.Text>
         <Card.Text>Toppings : {toppings.join(", ").toUpperCase()}</Card.Text>
@@ -54,6 +56,11 @@ function PizzaCard({
 }
 
 PizzaCard.propTypes = {
+  //price: PropTypes.number,
+  //title: PropTypes.string.isRequired,
+  //toppings: PropTypes.arrayOf(PropTypes.string),
+  //cheese: PropTypes.oneOf(["Yes", "No"]),
+  //children: PropTypes.element.isRequired,
   sauce(props, propName, component) {
     if (props[propName].length === 0) {
       return new Error(`No sauce provided`);

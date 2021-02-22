@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const Child = ({greeting}) => {
-    
-    return (
-        <div>
-            <button onClick={() => greeting(3)}>Click</button>
-        </div>
-    )
-}
+const Child = ({ greeting }) => {
+  return (
+    <div>
+      <button onClick={() => greeting(6)}>Child component</button>
+    </div>
+  );
+};
 
-export default Child
+export default Child;

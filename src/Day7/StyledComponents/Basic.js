@@ -6,7 +6,7 @@ const Basic = () => {
   const Title = styled.h1`
     font-size: 1.5em;
     text-align: center;
-    //color: black;
+    color: red;
   `;
 
   // Create a Wrapper component that'll render a <section> tag with some styles
@@ -14,9 +14,10 @@ const Basic = () => {
     padding: 4em;
     background: lightseagreen;
   `;
+
   return (
     <Wrapper>
-      <Title>Hello World!</Title>
+      <Title class="titleStyle">Hello World!</Title>
     </Wrapper>
   );
 };

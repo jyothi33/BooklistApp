@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 
 const TemplateLiterals = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
-  const [isFirstTime, setIsFirstTime] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isFirstTime, setIsFirstTime] = useState(false);
 
   //Single line  template literals
   let temp1 = `Single line string with "double quotes" `;
+
+  let name1 = "My name is Jyothi" + temp1;
 
   //Multiline Normal string
   let multilineString =
@@ -23,7 +25,7 @@ const TemplateLiterals = () => {
   let a = 3,
     b = 6;
   let normalinterpolation = "Nine is " + (a + b);
-  let expressionString = `I can add numbers ${3 + 6} `;
+  let expressionString = `I can add numbers ${a + b} `;
   let name = `Jyothi`;
   let dynamicString = `My name is ${name}`;
 
@@ -70,17 +72,18 @@ const TemplateLiterals = () => {
 
   return (
     <div>
+      {/* {name1}
       {temp1}
       <br></br>
       <pre>{multilineTemplateLiteral}</pre>
       <pre>{multilineString}</pre>
       {normalinterpolation}
       <br />
-      {expressionString}
-      <br />
+      {expressionString} */}
+      {/* <br />
       {dynamicString}
       <br />
-      {excapeBacktick}
+      {excapeBacktick} */}
       <br />
       <pre>
         <h1>{buttonText}</h1>
