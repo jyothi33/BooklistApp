@@ -6,6 +6,7 @@ export const BasicStringValidation = () => {
   const [mobileNo, setMobileNo] = useState();
   const [mobileNoErr, setMobileNoErr] = useState();
   const submitHandler = (event) => {
+    console.log(event.target);
     event.preventDefault();
 
     let isValid = isFormValid();
@@ -39,8 +40,8 @@ export const BasicStringValidation = () => {
       setFirstNameErr(firstNameErr);
     }
 
-    let regxMobile = /^[7-9]\d{9}$/;
-
+    let regxMobile = /^[6-9]\d{9}$/;
+    //6123456789
     if (!regxMobile.test(mobileNo)) {
       setMobileNoErr("Not a valid Indian Mobile Number!");
       isValid = false;

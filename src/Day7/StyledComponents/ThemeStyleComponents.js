@@ -20,12 +20,12 @@ const ThemeStyleComponents = () => {
 
   // Define what props.theme will look like
   const themeSettings = {
-    main: "blue",
+    main: "green",
   };
 
   return (
     <div>
-      <Button>Normal</Button>
+      <Button>Normal 1</Button>
       <ThemeProvider theme={themeSettings}>
         <Button>Themed</Button>
       </ThemeProvider>

@@ -8,16 +8,16 @@ const ControlledForms = () => {
     event.preventDefault();
   };
 
+  const changeHandler = (event) => {
+    setMessage(event.target.value);
+    console.log(message);
+  };
+
   return (
     <form action="" onSubmit={submitCall}>
       <h3>Controlled Components</h3>
       <label htmlFor="message">Write your Message : </label>
-      <input
-        type="textarea"
-        name="message"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-      />
+      <input type="textarea" name="message" onChange={changeHandler} />
     </form>
   );
 };

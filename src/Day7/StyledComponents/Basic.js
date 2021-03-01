@@ -17,7 +17,7 @@ const Basic = () => {
 
   return (
     <Wrapper>
-      <Title class="titleStyle">Hello World!</Title>
+      <Title>Hello World!</Title>
     </Wrapper>
   );
 };

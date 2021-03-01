@@ -4,12 +4,12 @@ const BasicUseEffect = () => {
   const [count, setCount] = useState(0);
   const [count1, setCount1] = useState(0);
 
-  //document.title = `You clicked ${count}`;
+  document.title = `You clicked ${count}`;
 
   useEffect(() => {
     console.log(count);
-    console.log(count1);
-  }, [count, count1]);
+    //console.log(count1);
+  }, [count1]);
 
   return (
     <>

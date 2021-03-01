@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 const ExtendingStyles = () => {
   const Button = styled.button`
-    color: palevioletred;
+    color: blue;
     font-size: 1em;
     margin: 1em;
     padding: 0.25em 1em;
-    border: 2px solid palevioletred;
+    border: 2px solid blue;
     border-radius: 3px;
   `;
 
@@ -16,7 +16,12 @@ const ExtendingStyles = () => {
     color: tomato;
     border-color: tomato;
   `;
-  return <TomatoButton>Tomato Button</TomatoButton>;
+  return (
+    <div>
+      <Button> Button</Button>
+      <TomatoButton>Tomato</TomatoButton>
+    </div>
+  );
 };
 
 export default ExtendingStyles;

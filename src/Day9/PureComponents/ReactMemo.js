@@ -8,5 +8,5 @@ function ReactMemo({ label }) {
   );
 }
 
-//export default ReactMemo;
-export default memo(ReactMemo);
+export default ReactMemo;
+//export default memo(ReactMemo);

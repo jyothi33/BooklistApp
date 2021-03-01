@@ -3,7 +3,17 @@ import FancyButton from "./FancyButton";
 
 const ParentButton = () => {
   const ref = useRef(null);
-  return <FancyButton ref={ref}>Click me!</FancyButton>;
+
+  function clickHandler(number) {
+    console.log(number);
+    console.log(ref);
+  }
+
+  return (
+    <FancyButton ref={ref} clickHandler={clickHandler}>
+      Click me!
+    </FancyButton>
+  );
 };
 
 export default ParentButton;
