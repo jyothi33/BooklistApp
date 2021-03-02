@@ -21,6 +21,15 @@ function UseEffectsFetch() {
     result();
   }, []);
 
+  const result1 = async () => {
+    await fetch(``)
+      .then((res) => {
+        return res.json();
+      })
+      .then((result) => {});
+  };
+  result1();
+
   return (
     <div>
       <h1>{quote}</h1>
