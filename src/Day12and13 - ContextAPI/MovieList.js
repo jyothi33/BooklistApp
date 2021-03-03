@@ -8,9 +8,8 @@ const MovieList = () => {
     <div>
       <MovieProvider>
         <NavBar />
+        <Movie />
       </MovieProvider>
-
-      <Movie />
     </div>
   );
 };

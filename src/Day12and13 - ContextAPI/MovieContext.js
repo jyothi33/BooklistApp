@@ -1,9 +1,9 @@
-import React, { createContext } from "react";
+import React, { createContext, useState } from "react";
 
 export const MovieContext = createContext();
 
 export const MovieProvider = (props) => {
-  const movies = [
+  const [movies, setMovies] = useState([
     {
       name: "Jurassic Park",
       price: 10,
@@ -11,22 +11,24 @@ export const MovieProvider = (props) => {
     },
     {
       name: "Inception",
-      price: 10,
+      price: 12,
       year: 2019,
     },
     {
       name: "Titanic",
-      price: 10,
+      price: 16,
       year: 2005,
     },
     {
       name: "Godzilla",
-      price: 10,
+      price: 19,
       year: 2010,
     },
-  ];
+  ]);
+
   return (
-    <MovieContext.Provider value="Hello Jyothi!">
+    <MovieContext.Provider value={[movies, setMovies]}>
+      {/* <MovieContext.Provider value="Jyothi"> */}
       {props.children}
     </MovieContext.Provider>
   );
