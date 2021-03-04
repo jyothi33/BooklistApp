@@ -3,7 +3,7 @@ import { MovieContext } from "./MovieContext";
 
 const Movie = () => {
   //const name = useContext(MovieContext);
-  const [movies, setMovies] = useContext(MovieContext);
+  const { movies, setMovies } = useContext(MovieContext);
 
   const [movieName, setMovieName] = useState("");
   const [price, setPrice] = useState("");

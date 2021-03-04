@@ -16,19 +16,26 @@ export const MovieProvider = (props) => {
     },
     {
       name: "Titanic",
-      price: 16,
+      price: 15,
       year: 2005,
     },
     {
       name: "Godzilla",
-      price: 19,
+      price: 17,
       year: 2010,
     },
   ]);
 
+  const [user, setUser] = useState("Jyothi");
+  const providerValue = {
+    user,
+    movies,
+    setMovies,
+  };
+
   return (
-    <MovieContext.Provider value={[movies, setMovies]}>
-      {/* <MovieContext.Provider value="Jyothi"> */}
+    <MovieContext.Provider value={providerValue}>
+      {/* <MovieContext.Provider value={[movies, setMovies]}> */}
       {props.children}
     </MovieContext.Provider>
   );
