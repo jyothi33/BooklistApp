@@ -1,0 +1,21 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: lightcoral;
+}
+
+nav li {
+  color: white;
+}
+nav li:hover {
+  text-decoration: none;
+}
+.nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
