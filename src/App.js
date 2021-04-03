@@ -1,37 +1,55 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ParentButton from "./Day10/ForwardingRef/ParentButton";
-import BasicExample from "./Day14/React Routers/BasicExample";
-import ParamsExample from "./Day14/React Routers/ParamsExample";
-import RouterApp from "./Day14/React Routers/RouterApp";
-import UseEffectHookCounter from "./Day10/UseEffectHooks/UseEffectHookCounter";
-import UseEffectsFetch from "./Day10/UseEffectHooks/UseEffectsFetch";
-import BasicUseEffect from "./Day10/UseEffectHooks/BasicUseEffect";
-import LazyLoadingImages from "./Day15/LazyLoadingComponentExample/LazyLoadingImages";
-import First from "./Day1/First";
-import ClassComponent from "./Day1/ClassComponent";
-import CounterExample from "./Day1/CounterExample";
-import MainHp from "./Day2/Headphones/MainHp";
-import Parent from "./Day6/FunctionProps/Parent";
-import PizzaApp from "./Day6/PropTypesExamples/PizzaApp";
-import ConditionalRenderComponent from "./Day6/ConditionalRenderComponent";
-import TemplateLiterals from "./Day7/TemplateLiterals";
-import Basic from "./Day7/StyledComponents/Basic";
-import ExtendingStyles from "./Day7/StyledComponents/ExtendingStyles";
-import AllStyleComponents from "./Day7/StyledComponents/AllStyleComponents";
-import ControlledForms from "./Day8/ReactForms/ControlledForms";
-import UncontrolledForms from "./Day8/ReactForms/UncontrolledForms";
-import { BasicStringValidation } from "./Day8/ReactForms/FormValidation/BasicStringValidation";
-import FragmentDemo from "./Day9/Fragments/FragmentDemo";
-import PortalsDemo from "./Day9/Portals/PortalsDemo";
-import ParentComp from "./Day9/PureComponents/ParentComp";
-import UseEffectWithCleanUp from "./Day10/UseEffectHooks/UseEffectWithCleanUp";
+import "./App.css";
+import ToggleAnimation from "./Day17/ReactAnimations/ToggleAnimation";
+import SpreadOperatorExample, { x, y } from "./Day3/SpreadOperatorExample";
+import LazyAndSuspense from "./Day16/LazyLoadingComponentExample/LazyAndSuspense";
+import CounterReducerExample from "./Day19/ReactHooks/CounterReducerExample";
+import CounterComplexReducerExample from "./Day19/ReactHooks/CounterComplexReducerExample";
+import CounterMultipleReducersEx from "./Day19/ReactHooks/CounterMultipleReducersEx";
+import DocumentOne from "./Day20/CustomHooks/DocumentOne";
+import ComponentApp from "./Day19/ReactHooks/CombinationHooks/ComponentApp";
+import DataFetchOne from "./Day19/ReactHooks/UseEffectsUseReducer/DataFetchOne";
+import CounterHookMain from "./Day20/CustomHooks/CounterCustomHooks/CounterHookMain";
+import FormCustomMain from "./Day20/CustomHooks/FormCustomHooks/FormCustomMain";
+import HocMain from "./Day9/HOC/HocMain";
+import UseCallbackMain from "./Day19/ReactHooks/UseCallbackExample/UseCallbackMain";
+import UseMemoExample from "./Day19/ReactHooks/UseMemoExample";
+import ToastDemo from "./Day21/ReactToastNoyification/ToastDemo";
+import ColorPicker from "./Day21/ReactToastNoyification/ColorPicker";
+import CreditCardExample from "./Day21/ReactToastNoyification/CreditCardExample";
+import TestJson from "./Day10/TestJson";
 import MovieList from "./Day12and13 - ContextAPI/MovieList";
-
+import DynamicMain from "./DynamicComponents/DynamicMain";
+import DynamicComponents from "./DynamicComponents/DynamicImports";
+import ReduxApp from "./ReduxDemo/ReduxApp";
 const App = () => {
   return (
     <div>
-      <MovieList />
+      <ReduxApp />
+      {/* <DynamicMain /> */}
+      {/* <DynamicComponents /> */}
+      {/* <TestJson /> */}
+      {/* <ToastDemo /> */}
+      {/* <ColorPicker /> */}
+      {/* <CreditCardExample /> */}
+      {/* <UseMemoExample /> */}
+      {/* <LazyAndSuspense /> */}
+      {/* <UseCallbackMain /> */}
+      {/* <HocMain /> */}
+      {/* <FormCustomMain /> */}
+      {/* <CounterHookMain /> */}
+      {/* <DataFetchOne /> */}
+      {/* <ComponentApp /> */}
+      {/* <DocumentOne /> */}
+      {/* <ToggleAnimation />
+      <SpreadOperatorExample /> */}
+      {/* <LazyAndSuspense /> */}
+      {/* <CounterReducerExample /> */}
+      {/* <CounterComplexReducerExample /> */}
+      {/* <CounterMultipleReducersEx /> */}
+      {/* <Recipe /> */}
+      {/* <MovieList /> */}
       {/* <ConditionalRenderComponent /> */}
       {/* <PizzaApp /> */}
       {/* <Parent /> */}
