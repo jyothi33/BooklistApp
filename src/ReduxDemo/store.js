@@ -1,10 +1,10 @@
 import { createStore, applyMiddleware } from "redux";
-import cakeReducer from "./redux/cake/cakeReducer";
 import { logger } from "redux-logger";
 import { composeWithDevTools } from "redux-devtools-extension";
+import rootReducer from "./redux/rootReducer";
 
 const store = createStore(
-  cakeReducer,
+  rootReducer,
   composeWithDevTools(applyMiddleware(logger))
 );
 

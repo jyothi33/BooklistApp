@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 const HooksCakeContainer = () => {
   //React redux version 7.1 and above
-  const cakes = useSelector((state) => state.numOfCakes);
+  const cakes = useSelector((state) => state.cake.numOfCakes);
   const dispatch = useDispatch();
   return (
     <div>
