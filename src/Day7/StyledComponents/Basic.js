@@ -15,9 +15,14 @@ const Basic = () => {
     background: lightseagreen;
   `;
 
+  const Para = styled.p`
+    color: white;
+  `;
+
   return (
     <Wrapper>
       <Title>Hello World!</Title>
+      <Para>I'm a new Paragraph</Para>
     </Wrapper>
   );
 };

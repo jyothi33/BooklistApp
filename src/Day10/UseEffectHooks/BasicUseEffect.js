@@ -6,10 +6,15 @@ const BasicUseEffect = () => {
 
   document.title = `You clicked ${count}`;
 
+  // useEffect(() => {
+  //   console.log(count);
+  //   //console.log(count1);
+  // }, [count1]);
+
   useEffect(() => {
-    console.log(count);
-    //console.log(count1);
-  }, [count1]);
+    console.log(count1)
+    
+  },[count1])
 
   return (
     <>

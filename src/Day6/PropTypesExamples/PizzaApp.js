@@ -9,10 +9,10 @@ function PizzaApp() {
       description:
         "Oozing with cheesy deliciousness! Enjoy the Mediterranean flavor with this hand-tossed 11-inch pizza - topped with Veg falafel, roasted veggies and onion",
       price: 1000,
-      toppings: ["olives", "black pepper", "jalepeno", 4],
+      toppings: ["olives", "black pepper", "jalepeno"],
       //toppings: [1, 2, 3],
       cheese: "Yes",
-      sauce: "",
+      sauce: "tomato",
     },
   ];
   return (

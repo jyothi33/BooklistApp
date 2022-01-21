@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, PureComponent } from "react";
 import PureComp from "./PureComp";
 import ReactMemo from "./ReactMemo";
 import RegularComp from "./RegularComp";
 
-class ParentComp extends Component {
+class ParentComp1 extends Component {
   constructor(props) {
     super(props);
 
@@ -31,4 +31,4 @@ class ParentComp extends Component {
   }
 }
 
-export default ParentComp;
+export default ParentComp1;

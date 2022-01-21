@@ -14,7 +14,7 @@ const MyButton = styled.button`
   ${(props) =>
     props.primary &&
     css`
-      background: palevioletred;
+      background: black;
       color: white;
     `};
   ${(props) =>
@@ -44,7 +44,7 @@ function ButtonInterpolation() {
       <MyButton secondary>Secondary</MyButton>
       <hr />
 
-      <Link>Unstyled, boring Link</Link>
+      <Link className="aColor">Unstyled, boring Link</Link>
       <br />
       <StyledLink>Styled, exciting Link</StyledLink>
     </>

@@ -1,1 +1,31 @@
 
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background: chocolate;
+    color: black;
+}
+
+.nav-links{
+    width:40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+img{
+    background:lightBlue;
+}
+
+.aColor{
+    color:chartreuse;
+}
+
+.todoInput{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

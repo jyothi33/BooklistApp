@@ -37,12 +37,12 @@ const AllStyleComponents = () => {
 
   return (
     <Container>
-      <Basic />
-      <hr />
+      {/* <Basic /> */}
+      {/* <hr />
       <ButtonInterpolation />
-      <hr />
-      <ExtendingStyles />
-      <hr />
+      <hr /> */}
+      {/* <ExtendingStyles />
+      <hr /> */}
       <ThemeStyleComponents />
       <hr />
     </Container>

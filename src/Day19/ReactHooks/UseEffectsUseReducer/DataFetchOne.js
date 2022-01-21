@@ -1,9 +1,9 @@
 import React, { useEffect, useReducer, useState } from "react";
 
 const DataFetchOne = () => {
-  //   const [loading, setLoading] = useState(true);
-  //   const [post, setPost] = useState();
-  //   const [error, setError] = useState("");
+    // const [loading, setLoading] = useState(true);
+    // const [post, setPost] = useState();
+    // const [error, setError] = useState("");
 
   let initialState = {
     loading: true,
@@ -42,19 +42,21 @@ const DataFetchOne = () => {
         })
         .then((response) => {
           dispatch({ type: "FETCH_SUCCESS", payload: response.title });
-          //   setPost(response.title);
-          //   setLoading(false);
-          //   setError("");
+            console.log(response)
+            // setPost(response.title);
+            // setLoading(false);
+            // setError("");
         })
         .catch((error) => {
+          console.log("error")
           dispatch({ type: "FETCH_ERROR" });
-          //   setPost("");
-          //   setLoading(false);
-          //   setError("Something went wrong!!!");
+            // setPost("");
+            // setLoading(false);
+            // setError("Something went wrong!!!");
         });
 
     result();
-  }, [postObj.post]);
+  },[postObj.post]);
 
   return (
     <div>
@@ -64,6 +66,10 @@ const DataFetchOne = () => {
         ? null
         : postObj.post}
       <div>{postObj.error && postObj.error}</div>
+      {/* {loading
+        ? "Loading..."
+        : post}
+      <div>{error && error}</div> */}
     </div>
   );
 };

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 const ConditionalRenderComponent = ({ name = "Jyothi S" }) => {
-  let [loggedIn, setLoggedIn] = useState(true);
+  let [loggedIn, setLoggedIn] = useState(false);
 
   return loggedIn && <div>Welcome Jyothi</div>;
   //return loggedIn ? <div>Welcome {name}</div> : <div>Welcome Guest</div>;
 
-  // let message
+  //  let message
 
   // if(loggedIn){
   //     message = <div>Welcome Jyothi</div>
@@ -15,7 +15,7 @@ const ConditionalRenderComponent = ({ name = "Jyothi S" }) => {
   //     message = <div>Welcome Guest</div>
   // }
 
-  //  return message;
+  // return message;
 
   //if Else condition
   // if(loggedIn){

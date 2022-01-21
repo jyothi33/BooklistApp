@@ -56,11 +56,11 @@ function PizzaCard({
 }
 
 PizzaCard.propTypes = {
-  //price: PropTypes.number,
-  //title: PropTypes.string.isRequired,
-  //toppings: PropTypes.arrayOf(PropTypes.string),
-  //cheese: PropTypes.oneOf(["Yes", "No"]),
-  //children: PropTypes.element.isRequired,
+  price: PropTypes.number,
+  title: PropTypes.string.isRequired,
+  toppings: PropTypes.arrayOf(PropTypes.string),
+  cheese: PropTypes.oneOf(["Yes", "No"]),
+  children: PropTypes.element.isRequired,
   sauce(props, propName, component) {
     if (props[propName].length === 0) {
       return new Error(`No sauce provided`);

@@ -2,7 +2,7 @@ const url = "google.com";
 let cars = ["BMW", "MARUTI", "HYUNDAI"];
 
 for (let x of cars) {
-  //console.log(x);
+  console.log(x);
 }
 function myFun(x, y = 10) {
   console.log(x + y);

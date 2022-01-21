@@ -20,8 +20,8 @@ const ReduxApp = () => {
         <PayloadCakeContainer /> */}
         {/* <ItemContainer cake />
         <ItemContainer /> */}
-        {/* <UserContainer /> */}
-        <UserSagaExample />
+        <UserContainer />
+        {/* <UserSagaExample /> */}
       </div>
     </Provider>
   );

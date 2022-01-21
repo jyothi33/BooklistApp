@@ -4,13 +4,11 @@ import Home from "./Home";
 import Nav from "./Nav";
 import Shop from "./Shop";
 import "./routerStyle.css";
-import BBCharacter from "./BBCharacter";
 //Renaming as it is big.
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Redirect,
+  Routes,
 } from "react-router-dom";
 import BBChar from "../BBChar";
 import UserProfile from "./UserProfile";
@@ -35,15 +33,17 @@ const RouterApp = () => {
           <Route path="/" exact component={Home} />
           <Route path="/shop" component={Shop} />
         </Switch> */}
-        <Switch>
+        <Routes>
+
+        
           <Route path="/" exact component={Home}></Route>
           <Route path="/about">
-            {login ? <UserProfile /> : <Redirect to="/" />}
+            {login && <UserProfile /> }
           </Route>
           <Route path="/shop" exact component={Shop}></Route>
           <Route path="/shop/:charId" component={BBChar}></Route>
           <Route component={NotFound}></Route>
-        </Switch>
+          </Routes>
       </Router>
     </>
   );

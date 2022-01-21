@@ -12,13 +12,13 @@ const inner = [
   React.createElement("h1", {}, "My Third React Code"),
 ];
 
-ReactDOM.render(
-  //React.createElement("div", null, inner),
+//React.createElement("div", null, inner),
   //   <div>
   //     <h1>MyFirst Jsx</h1>
   //     <h1>MySecond Jsx</h1>
   //     <h1>MyThird Jsx</h1>
   //   </div>,
+ReactDOM.render(
   <App />,
   document.getElementById("root")
 );
